@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Nitu Kumari</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Nitu Kumari</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about">About</a></li>
+
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/pro-pic.png" alt=" profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Nitu Kumari</h1>
+        <h2 class="section__text__p2">Frontend Developer</h2>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Nitu_Kumari (29.11.23).pdf')"
+          >
+            Download CV
+          </button>
+
+          <button
+            class="btn btn-color-1"
+            onclick="window.open('mailto:knitu7392@gmail.com', '_blank')"
+          >
+            Contact Info
+          </button>
+        </div>
+      </div>
+    </section>
+    <section id="about_me">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+
+      <div class="about-details-container">
+        <div class="text-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <p>
+                I'm Nitu Kumari, a driven software developer studying Computer
+                Science at MCKV Institute Of Engineering. Skilled in optimizing
+                website performance, crafting user-friendly API documentation,
+                and integrating cutting-edge technologies. My portfolio includes
+                projects like NetflixGPT, FundMe, and Kodikas, showcasing
+                proficiency in React JS, Redux, Solidity, Node.js, and MongoDB."
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="education">
+      <p class="section__text__p1">Know My</p>
+      <h1 class="title">Education</h1>
+      <div class="about-containers">
+        <div class="details-container">
+          <ul>
+            <li class="list-style">
+              Bachelor of Technology in Computer Science - MCKV Institute of
+              Engineering (2020-2024)
+            </li>
+
+            <li class="list-style">12th - Methodist School (2020)</li>
+            <li class="list-style">10th - Methodist School (2018)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="skills-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h3 class="skills-sub-title">Frontend Development</h3>
+            <ol>
+              <li class="list-style">HTML - Experienced</li>
+              <li class="list-style">CSS - Experienced</li>
+              <li class="list-style">SASS - Intermediate</li>
+              <li class="list-style">JavaScript - Basic</li>
+              <li class="list-style">TypeScript - Basic</li>
+              <li class="list-style">Material UI - Intermediate</li>
+            </ol>
+          </div>
+          <div class="details-container">
+            <h3 class="skills-sub-title">Backend Development</h3>
+            <ol>
+              <li class="list-style">MongoDB - Basic</li>
+              <li class="list-style">Node JS - Intermediate</li>
+              <li class="list-style">Express JS - Intermediate</li>
+              <li class="list-style">Git - Intermediate</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div id="socials-container">
+        <img
+          src="./assets/linkedin.png"
+          alt="My LinkedIn profile"
+          class="icon"
+          onclick="location.href='https://linkedin.com/in/nitu-kumari-46a8541bb/'"
+        />
+        <img
+          src="./assets/github.png"
+          alt="My Github profile"
+          class="icon"
+          onclick="location.href='https://github.com/U220053'"
+        />
+      </div>
+      <p>&copy; 2024 Nitu Kumari. All Rights Reserved.</p>
+    </footer>
+    <script>
+      function toggleMenu() {
+        const menu = document.querySelector(".menu-links");
+        const icon = document.querySelector(".hamburger-icon");
+        menu.classList.toggle("open");
+        icon.classList.toggle("open");
+      }
+    </script>
+  </body>
+</html>
